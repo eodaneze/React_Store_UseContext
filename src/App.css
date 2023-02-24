@@ -1,0 +1,168 @@
+.product_content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 4% 6%;
+  gap: 2rem;
+
+}
+.products{
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.products img{
+  width: 100%;
+  height: 300px;
+}
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+.container{
+  margin: 0 8%;
+  display: flex;
+  gap: 3rem;
+  margin-top: 8%;
+}
+.product_img{
+  flex-basis: 35%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.product_details{
+  flex-basis: 45%;
+}
+.product_price{
+  flex-basis: 15%;
+}
+.product_details h1{
+  margin-bottom: 20px;
+}
+.product_details .cat{
+  margin-bottom: 10px;
+}
+.container .product_img img{
+  height: 400px;
+  width: 100%;
+}
+.container-1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 8%;
+}
+.navbar{
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 2px 5px 30px #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.desc{
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.flex-home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product_price{
+  border: 1px solid #ccc;
+  height: fit-content;
+  
+}
+.product_price h4, .product_price h3{
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.product_price h3 b{
+  background-color: rgb(16, 3, 37);
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+.btn{
+  border: 1px solid rgb(16, 3, 37);
+  padding: 8px 15px;
+  width: 100%;
+  background-color: rgb(16, 3, 37);
+  color: white;
+}
+.nav-links .link{
+  margin: 0 10px;
+  font-size: 20px;
+}
+.nav-links .link span{
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 50%;
+}
+.hero-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-content-1 div h1{
+  color: #ccc;
+  font-size: 50px;
+  padding-top: 15%;
+}
+.all-hero{
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url("https://media.istockphoto.com/id/1325195703/photo/woman-changing-shoes.jpg?b=1&s=170667a&w=0&k=20&c=xwEQfpqY_dj2NoFThPa2gptu1K4m-Qrh_T3zGb5FbTA=") center/cover fixed no-repeat;
+  height: 50vh;
+}
+
+.store-cta button{
+  background-color: rgb(16, 3, 37);
+  color: white;
+  border: none;
+  width: 200px;
+  padding: 10px 0;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.store-cta button:hover{
+   background-color: transparent;
+   border: 1px solid rgb(16, 3, 37);
+   color: black;
+
+}
+.inner{
+  overflow: hidden;
+}
+.inner img{
+  transition: all 1.5s ease;
+}
+.inner:hover img{
+  cursor: pointer;
+  transform: scale(1.5);
+}
+@media(max-width:800px){
+  .product_content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container{
+    flex-direction: column;
+
+  }
+}
+@media(max-width:600px){
+  .product_content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

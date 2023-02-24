@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* globel classes */
+.flex{
+  display: flex;
+}
+.align-items{
+  align-items: center;
+}
+.justify-content{
+  justify-content: space-between;
+}
