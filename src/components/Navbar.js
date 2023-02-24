@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import Hero from "./Hero";
+import { Cartcontext } from "../context/Context";
 const Navbar = () => {
+   
+  const GlobelState = useContext(Cartcontext);
+  const dispatch = GlobelState.dispatch
   return (
     <>
       <div className="navbar">

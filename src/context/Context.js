@@ -7,7 +7,14 @@ export const Context = (props) => {
     const reducer = (state, action) => {
          switch(action.type){
              case "ADD":
-                 return [...state, action.payload]
+                //  this we stop deplicate in the cart
+                const tempstate = state.filter((item) => action.payload.id === item.id)
+                if(tempstate.length > 0){
+                    return state
+                }else{
+                    return [...state, action.payload]
+                }
+                
              default: return state;
          }
     }
