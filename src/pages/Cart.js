@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import { Cartcontext } from '../context/Context'
+import { TbCurrencyNaira } from "react-icons/tb"
 
 const Cart = () => {
   const Globalstate = useContext(Cartcontext);
@@ -11,9 +12,9 @@ const Cart = () => {
            return <div className='card' key={index}>
              <img src={item.image} alt="" />
              <p>{item.title}</p>
-             <p>{item.quantity * item.price}</p>
+             <p><TbCurrencyNaira />{item.quantity * item.price}</p>
              <div className="quantity">
-                <button>+</button><p>{item.quantity}</p>
+                <button onClick={()=>dispatch({type:"INCREASE", payload: item})}>+</button><p>{item.quantity}</p>
                 <button>-</button>
              </div>
              <h2>X</h2>

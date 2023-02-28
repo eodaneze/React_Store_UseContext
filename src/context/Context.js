@@ -14,6 +14,16 @@ export const Context = (props) => {
                 }else{
                     return [...state, action.payload]
                 }
+            case "INCREASE":
+                const tempstate1 = state.map((item) => {
+                    if(item.id === action.payload.id){
+                       return {...item, quantity:item.quantity + 1}
+                    }else{
+                        return item
+                    }
+                });
+
+                return tempstate1
                 
              default: return state;
          }
