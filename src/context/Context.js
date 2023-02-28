@@ -34,6 +34,10 @@ export const Context = (props) => {
         });
         return tempstate2;
 
+    case "REMOVE":
+        const tempstate3 = state.filter((item) => item.id !== action.payload.id);
+        return tempstate3
+
       default:
         return state;
     }

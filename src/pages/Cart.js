@@ -17,7 +17,7 @@ const Cart = () => {
                 <button onClick={()=>dispatch({type:"INCREASE", payload: item})}>+</button><p>{item.quantity}</p>
                 <button onClick={() => dispatch({type: "DECREASE", payload: item})}>-</button>
              </div>
-             <h2>X</h2>
+             <h2 onClick={() => dispatch({type:"REMOVE", payload: item })}>X</h2>
            </div>
          })}
     </div>
