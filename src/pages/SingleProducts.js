@@ -19,6 +19,9 @@ const SingleProducts = () => {
         </div>
       </div>
       <div className="product_details">
+        {
+          item.quantity = 1
+        }
         <h1>{item.title}</h1>
         <p className="desc">{item.description}</p>
         <p className="cat">
