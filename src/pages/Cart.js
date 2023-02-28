@@ -15,7 +15,7 @@ const Cart = () => {
              <p><TbCurrencyNaira />{item.quantity * item.price}</p>
              <div className="quantity">
                 <button onClick={()=>dispatch({type:"INCREASE", payload: item})}>+</button><p>{item.quantity}</p>
-                <button>-</button>
+                <button onClick={() => dispatch({type: "DECREASE", payload: item})}>-</button>
              </div>
              <h2>X</h2>
            </div>

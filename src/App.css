@@ -171,6 +171,9 @@
 .cart .card img{
   width: 40px;
   height: 40px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: red;
 }
 .cart .card p{
   max-width: 200px;
